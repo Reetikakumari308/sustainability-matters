@@ -21,24 +21,3 @@ const authMiddleware = (req, res, next) => {
 
 module.exports = authMiddleware;
 
-// const jwt = require('jsonwebtoken');
-
-// const authMiddleware = (req, res, next) => {
-//   const token = req.cookies?.token;
-
-//   if (!token) {
-//     const redirectPath = req.originalUrl;
-//     return res.redirect(`/frontend/register.html?redirect=${encodeURIComponent(redirectPath)}`);
-//   }
-
-//   try {
-//     const decoded = jwt.verify(token, process.env.JWT_SECRET);
-//     req.user = decoded;
-//     next();
-//   } catch (err) {
-//     const redirectPath = req.originalUrl;
-//     return res.redirect(`/frontend/register.html?redirect=${encodeURIComponent(redirectPath)}`);
-//   }
-// };
-
-// module.exports = authMiddleware;

@@ -1,205 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>SUSTAINABILITY MATTERS</title>
+    <title>Register Page</title>
+    <link rel="stylesheet" href="css/login-css.css">
+    <link rel="icon" href="images/favicon (1).ico">
+   
 
-  <!-- css style sheets -->
-
-  <link rel="stylesheet" href="/frontend/css/styles.css">
-  
-
-
-  <!--icon link-->
-  <link rel="icon" href="/frontend/images/favicon (1).ico">
-  
-
-
-  <!--js link-->
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-
-  <!-- google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Lavishly+Yours&family=Pacifico&family=Passions+Conflict&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica&family=Kaushan+Script&family=PT+Serif&family=Playfair+Display:ital@1&family=Ubuntu&display=swap" rel="stylesheet">
-  <!-- font awesome -->
-  <script src="https://kit.fontawesome.com/1220c58f02.js" crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
 </head>
 
 <body>
-  <!-- first-container -->
-  <div class="first-container">
-    <div class="" style="position:absolute; width:100%; box-shadow: 1px 20px 20px 6px #fff;">
-      <video autoplay muted loop class="background-video" id="video">
-        <source src="/frontend/videos/backvideo.mp4" type="video/mp4" />
-      </video>
+    <div class="title">
+        <center style="margin-top:8%; color: #1cc140; font-size:40px;"><strong>SUSTAINABILITY MATTERS</strong></center>
     </div>
 
-    <nav class="navbar" style="position:relative ; padding-top: 8px;">
-      <img class=" logo-image" src="/frontend/images/logo.png" alt="logo">
-      <ul class="nav-ul">
-        <li>
-          <a class="nav-items" href="/frontend/login.html">
-            <strong>LOGIN</strong>
-          </a>
-        </li>
-        <li><a class="nav-items" href="/frontend/register.html"><strong>REGISTER</strong></a></li>
-        <li><a class="nav-items" href="https://www.blogger.com/blog/posts/3679664970590720314?pli=1#create" target="_blank"><strong>CREATE YOUR BLOG</strong></a></li>
-      </ul>
-
-    </nav>
-    <div class="text-layout">
-      <p style="font-size:60px; font-weight: bold;font-family: 'Berkshire Swash';">Be Sustainable , Save The Future!</p>
+    <div class="login">
+        <center>
+            <h2>Create your Account</h2>
+        </center>
+        <form id="formvalidate" method="post">
+            <input type="text" name="userName" id="userName" placeholder="Username" class="form-control"
+                required><br><br>
+            <input type="password" name="userPassword" id="userPassword" placeholder="Password" class="form-control"
+                required><br><br>
+            <button type="submit" id="registerBtn">Register</button><br><br>
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+        </form>
     </div>
-  </div>
 
-  <nav class="sec-nav-bar">
-    <ul class="nav-ul">
-      <li><a class="nav-items" href="/frontend/index.html"><i class="fa-solid fa-house-chimney"></i>HOME</a></li>  
-      <li><a class="nav-items" href="/frontend/goal.html"><i class="fa-solid fa-bullseye"></i>GOAL</a></li>
-      <li><a class="nav-items" href="/frontend/approach.html"><i class="fa-solid fa-earth-americas"></i>APPROACH</a></li>
-    </ul>
-  </nav>
-  
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const redirectPath = urlParams.get('redirect') || '/';
 
-  <!-- second-container -->
-  <div class="second-container">
-    <div class="grid-1">
-      <p class="sec-div-quotes">
-        Save The Green & Blue Before Our Future Generation Has To Paint Everything Black!</p>
-    </div>
-    <div class="grid-2">
-      <img class="img-grid-2 " src="/frontend/videos/giphy.gif" alt="sustainable-pic">
-    </div>
-  </div>
+        document.getElementById('formvalidate').addEventListener('submit', async function (e) {
+            e.preventDefault();
 
-  <!-- third-container -->
-  <div class="third-container">
-    <div class="grid-1">
-      <p style="text-align:center; font-size:50px; margin-top:0; padding-top:25%;text-shadow: 10px 5px 12px #170701;">
-        What is Sustainable Development?</p>
-    </div>
-    <div class="grid-2">
-      <p style=" text-align: center; font-size:30px ; font-family: 'IM Fell Double Pica', serif; margin-right: 10%;padding-top: 10%;">Sustainable development can be defined as development that meets the needs of the present without compromising the
-        ability of future generations to meet their own needs.There is an emphasis on the present generations' responsibility to regenerate, maintain and improve planetary resources for use by future generations.</p>
-    </div>
-  </div>
+            const username = document.getElementById('userName').value.trim();
+            const password = document.getElementById('userPassword').value.trim();
 
-  <!-- fourth-container -->
-  <div class="fourth-container">
-    <div class="grid-1-4">
-      <iframe width="100%" height="300px" src="https://www.youtube.com/embed/jfsWI8XgQyo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-    </div>
-    <!-- <div class="grid-2-4">
-  <img class = "quotesimage"src="images/sustainable quotes.jpg" alt="sustainable quotes">
-</div> -->
-    <div class="quotesdivtext">
-      <div class="small-div-quote">
-        <p class="text-quo">"Ihe goal of Sustainable development is to enable all people throughout the world to satisfy their basic needs and enjoy a better quality of life, without compromising the quality of life of future generations."</p>
-      </div>
+            if (!username || !password) {
+                alert('Please enter both username and password');
+                return;
+            }
 
+            try {
+                const response = await fetch('http://localhost:5000/api/auth/register', {
+                    method: 'POST',
+                    mode: 'cors',
+                    headers: { 'Content-Type': 'application/json' },
+                    credentials: 'include',
+                    body: JSON.stringify({ username, password })
+                });
 
-      <div class="small-div-quote">
-        <p class="text-quo">"Sustainable development is important if you want your generations to live like you."</p>
-      </div>
+                let data;
+                try {
+                    data = await response.json();
+                } catch {
+                    data = {};
+                }
 
+                if (response.ok) {
+                    localStorage.setItem('loggedIn', 'true');
+                    alert('Registration successful!');
+                    window.location.href = 'all.html';  // ⬅️ Redirect to intended page
+                } else {
+                    alert('Registration failed: ' + (data.message || JSON.stringify(data)));
+                }
+            } catch (error) {
+                alert('Error: ' + error.message);
+            }
+        });
+    </script>
 
-      <div class="small-div-quote">
-        <p class="text-quo">"Sustainable Development is a process which enables all people to realise their potential and to improve their quality of life in ways which PROTECT and ENHANCE the Earth's life support systems."</p>
-      </div>
-
-      <div class="small-div-quote">
-        <p class="text-quo">"Sustainability is no longer about doing less harm. It's about doing more good."</p>
-      </div>
-    </div>
-  </div>
-
-<!-- fifth container -->
-  <div class="fifth-container">
-    <img style="float:left;width:20%; " src="/frontend/examples/ex.gif" alt="gif">
-    <center>
-      <h1 style="padding-top:8%;font-family: 'Kaushan Script', cursive; font-size:50px;color: #00d358;text-shadow: 6px 0px 10px #000000;">Examples of Sustainable Development</h1>
-    </center>
-    <div class="examples-div">
-     <div class="example-pic pic1">
-       <a href="https://studiousguy.com/sustainable-development-examples/">
-        <p class= "example-text">Wind Energy</p>
-      </a>
-      </div>
-      <div class="example-pic pic2">
-        <a href="https://studiousguy.com/sustainable-development-examples/">
-        <p class= "example-text">Solar Energy</p>
-      </a>
-      </div>
-      <div class="example-pic pic3">
-        <a href="https://studiousguy.com/sustainable-development-examples/">
-        <p class= "example-text">Crop Rotation</p>
-      </a>
-      </div>
-    </div>
-    <div class="examples-div-2">
-      <div class="example-pic pic4">
-        <a href="https://studiousguy.com/sustainable-development-examples/">
-        <p class= "example-text" >Sustainable forestry</p>
-      </a>
-      </div>
-      <div class="example-pic pic5">
-        <a href="https://studiousguy.com/sustainable-development-examples/">
-        <p class= "example-text">Green space</p>
-      </a>
-      </div>
-      <div class="example-pic pic6">
-        <a href="https://studiousguy.com/sustainable-development-examples/">
-        <p class= "example-text">Sustainable construction</p>
-      </a>
-      </div>
-    </div>
-  </div>
-  <div class="footer">
-  
-  <h2>🌱 Sustainability Matters</h2>
-  <p style="font-size: 25px; margin: 10px 0;">Empowering a greener tomorrow, one step at a time.</p>
-  <p style="margin-top: 20px; font-size: 20px;">© 2025 Sustainably Matters | All rights reserved.</p>
-  <h3 style="margin-top: 30px;font-size: 20px;">📬 Stay Connected</h3>
-<a class="social-link" href="http://www.linkedin.com/in/reetika-kumari-51573b230" target="_blank"
-  style="margin: 0 10px; color: #2e7d32; text-decoration: none;">
-  <i class="fab fa-linkedin"></i>
-</a>
-<a class="social-link" href="mailto:reetikakumari308@gmail.com" target="_blank"
-  style="margin: 0 10px; color: #2e7d32; text-decoration: none;">
-  <i class="fas fa-envelope"></i>
-</a>
-<a class="social-link" href="tel:+919801848011" style="margin: 0 10px; color: #2e7d32; text-decoration: none;">
-  <i class="fas fa-phone"></i>
-</a>
-<p style="margin-top: 25px; font-style: italic;font-size: 20px;">💡 Created with love by <strong>Reetika Kumari</strong> to inspire sustainable living.</strong></p>
-</div>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const isLoggedIn = localStorage.getItem('loggedIn') === 'true';
-
-    const goalLink = document.querySelector('a[href="/goal"]');
-    const approachLink = document.querySelector('a[href="/approach"]');
-
-    function checkLoginAndRedirect(event) {
-      if (!isLoggedIn) {
-        event.preventDefault(); // stop navigation
-        alert('Please login or register first!');
-      }
-    }
-
-    if (goalLink) goalLink.addEventListener('click', checkLoginAndRedirect);
-    if (approachLink) approachLink.addEventListener('click', checkLoginAndRedirect);
-  });
-</script>
-
+   
+    
+   
 </body>
-
 
 </html>
