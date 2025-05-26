@@ -1,0 +1,271 @@
+body {
+  margin: 0;
+}
+
+.sec-nav-bar {
+  width: 100%;
+  height: 70px;
+  position: static;
+  background-image: linear-gradient(#999090, black);
+  text-align: right;
+}
+
+li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.nav-items {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-items:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+.nav-ul {
+  text-align: right;
+  padding-top: 2%;
+  margin-top: 0;
+}
+
+.image-cover {
+  background-image: url(/frontend/approach-images/Approach.gif);
+  height: 600px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 3px 8px 3px black;
+  animation: reetika 4s infinite;
+}
+
+.mid-title {
+  margin: auto;
+  font-size: 60px;
+  color: white;
+}
+
+.textbox {
+  margin: auto;
+  position: relative;
+  top: 40%;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.secondboxtitle {}
+
+.thirdbox {
+  display: flex;
+  width: 100%;
+  margin-top: 10%;
+}
+
+.approach {
+  width: 30%;
+  height: 350px;
+  margin-right: 2.5%;
+  box-shadow: 5px 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+  width: 200px;
+  height: 35px;
+  font-family: 'Kaushan Script', cursive, sans-serif;
+  font-size: 16px;
+  text-shadow: 2px 2px #e5e3c9;
+  border-radius: 10px;
+  background-image: linear-gradient(112deg, #30AADD, white);
+}
+
+.inner-flip {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cover-flip:hover .inner-flip {
+  transform: rotateY(180deg);
+}
+
+.goalee,
+.approach-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.approach-back {
+  background-image: linear-gradient(#F8CB2E, #FFBDE6);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.approach1 {
+  background-image: url('/frontend/approach-images/Save-energy.jpg');
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.approach2 {
+  background-image: url('/frontend/approach-images/walk\ \,\ bike\ or\ travel\ with\ public\ transport.jpg');
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.approach3 {
+  background-image: url('/frontend/approach-images/Eat\ more\ vegetables.jpg');
+  background-position: center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+
+.approach4 {
+  background-image: url('/frontend/approach-images/consider\ your\ travel.jpg');
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.approach5 {
+  background-image: url('/frontend/approach-images/Throw\ away\ less\ food.jpg');
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+
+.approach6 {
+  background-image: url('/frontend/approach-images/Reduce\,Reuse\,Repair\ and\ Recycle.jpg');
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.approach7 {
+  background-image: url('/frontend/approach-images/Change\ your\ home\'s\ source\ energy.jpg');
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.approach8 {
+  background-image: url('/frontend/approach-images/Switch\ to\ an\ electric\ vehicle.jpg');
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.approach9 {
+  background-image: url('/frontend/approach-images/Eco-Friendly-Product.jpg');
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.approach10 {
+  background-image: url('/frontend/approach-images/speakup.jpg');
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.text {
+  text-align: center;
+  position: relative;
+  top: 30%;
+  font-size: 50px;
+  color: #2003ff;
+}
+
+.text:hover {
+  color: #FB2678;
+}
+
+.footer {
+  text-align: center;
+  background-color: #B4E197;
+  padding: 80px 0;
+  margin-top: 15%;
+  box-shadow: -1px -4px 20px 0 black;
+}
+
+.social-link {
+  text-decoration: none;
+  margin-right: 20px;
+  color: #fff;
+}
+
+.social-link:hover {
+  color: #886f6f;
+}
+
+.comment-box {
+  padding: 3%;
+  margin-top: 8%;
+}
+
+.box {
+  max-width: 500px;
+  margin: auto;
+  background: beige;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 10%;
+}
+
+.comment {
+  display: block;
+  transition: all 1s;
+}
+
+.afterText {
+  min-height: 0px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.box textarea {
+  width: 95%;
+  border: none;
+  background: #262626;
+  padding: 15px;
+  height: 50%;
+  border-radius: 5px;
+  transition: all 0.5s;
+  margin-top: 15px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+button.btn-box {
+  background: #262626;
+  color: #fff;
+  padding: 20px 25px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  transition: 1s all;
+  font-size: 10px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+button.btn-box:hover {
+  background: darkorange;
+}

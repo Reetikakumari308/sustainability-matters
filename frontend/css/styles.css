@@ -1,0 +1,286 @@
+body {
+  margin: 0;
+  /* background-color: #26997E; */
+}
+a{
+  text-decoration: none;
+}
+
+/* FIRST CONTAINER */
+.first-container {
+  height: 600px;
+  width: 100%;
+}
+
+.logo-image {
+  margin: 0;
+  width: 10%;
+  float: left;
+  opacity: 1;
+}
+
+.navbar {
+  width: 100%;
+  height: 180px;
+  background-color: black;
+  opacity: 0.5;
+}
+
+li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.nav-items{
+  text-decoration: none;
+  color: #fff;
+  font-size: larger;
+}
+
+.nav-items:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+.nav-ul {
+  text-align: right;
+  padding-top: 2%;
+}
+
+.background-video {
+  object-fit: cover;
+  height: 600px;
+  width: 100%;
+}
+
+.text-layout {
+  margin: auto;
+  width: 80%;
+  position: relative;
+  top: 90px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 5px 1px 3px #2cdbb2;
+}
+
+.sec-nav-bar {
+  width: 100%;
+  height: 70px;
+  background-color: black;
+  position: static;
+}
+
+/* SECOND-CONTAINER */
+.second-container {
+  /* background-image: url("images/people.jpg");
+  /* filter: brightness(60%); */
+  /* opacity: 0.5;
+  background-size:cover;
+  background-position: center; */
+  width: 100%;
+  height: 600px;
+  /* background-color: #26997E; */
+  background-image: linear-gradient(to right, #D882E5, #FAFFAF);
+  /* background-image: linear-gradient(to right, #D882E5, #FFD9F3); */
+  display: flex;
+
+}
+
+
+
+.grid-1 {
+  width: 50%;
+}
+.sec-div-quotes{
+  text-align:center; font-size:50px; font-family:'Berkshire Swash';color: #fff; margin-top:0; padding-top:20%;text-shadow: 10px 5px 12px #170701;
+  animation-name: cse218;
+animation-duration: 4s;
+animation-iteration-count: 2;
+}
+@keyframes cse218{
+  from{
+    font-size:10px;
+  }
+
+  to{
+    font-size: 50px;
+  }
+
+}
+.grid-2 {
+  width: 60%;
+}
+
+.img-grid-2 {
+  margin-top: 10%;
+  margin-left: 20%;
+  border-radius: 60%;
+}
+
+/* third-container */
+.third-container {
+  width: 100%;
+  /* height:600px; */
+  box-shadow: 0px -3px 20px 2px black;
+  display: flex;
+      padding-bottom: 5%;
+}
+
+/* fourth-container */
+.fourth-container {
+  width: 100%;
+  height: 650px;
+  background-image: linear-gradient(to right, #94FFC4, #F5B4DE);
+  box-shadow: -1px -2px 20px 0px black;
+  display: flex;
+}
+
+.grid-1-4 {
+  width: 40%;
+  padding-top: 12%;
+  margin-left: 2%;
+}
+
+/* grid-2-4{
+  width: 60%;
+}
+.quotesimage{
+  width: 60%;
+  margin-left: 10%;
+  padding-top: 16%;
+  padding-left: 20%;
+  height: 400px;
+
+} */
+.quotesdivtext {
+  width: 60%;
+  padding-top: 1%;
+}
+
+.small-div-quote {
+  width: 70%;
+  height:115px;
+  margin-left: 25%;
+  background-image: linear-gradient(to right, #fff, #f6c065);
+  margin-top: 4%;
+  border-radius: 15px;
+  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+  font-family: 'PT Serif', serif;
+  font-weight: bold;
+  box-shadow: 9px 9px 1px 1px black;
+}
+.small-div-quote:hover{
+  box-shadow:2px 2px black;
+  width:72%;
+  height:125px;
+  transition:width 2s , height 2s;
+}
+
+.text-quo {
+  padding: 5%;
+  text-align: center;
+  margin: 0;
+}
+
+/* fifth-container */
+.fifth-container{
+  width:100%;
+  height:900px;
+  padding-bottom: 10%;
+
+}
+.examples-div{
+  width:80%;
+  /* height:100px; */
+  margin:auto;
+  display:flex;
+}
+.example-pic{
+  width:25%;
+  /* background-color: red; */
+  margin-right: 8.33%;
+  height:250px;
+  box-shadow: 5px 6px 4px 4px black;
+}
+.example-pic:hover{
+  box-shadow: 2px 2px black;
+  width:28%;
+  height:255px;
+  transition: width 2s , height 2s;
+  /* transform: scale(1.15); */
+}
+.pic1{
+background-image:url("/frontend/examples/windenergy.jpg");
+background-size: cover;
+background-position: center;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+
+}
+.pic2{
+background-image:url("/frontend/examples/solarenergy.jpg");
+background-size: cover;
+background-position: center;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+.pic3{
+background-image:url("/frontend/examples/croprotation.jpg");
+background-size: cover;
+background-position: center;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+.examples-div-2{
+  width:80%;
+  /* margin:auto; */
+  /* height: 100px; */
+  margin-left: 20%;
+  display:flex;
+  padding-top:5%;
+}
+.pic4{
+background-image:url("/frontend/examples/sustainableforestry.jpg");
+background-size: cover;
+background-position: center;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+.pic5{
+background-image:url("/frontend/examples/greenspace.jpg");
+background-size: cover;
+background-position: center;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+.pic6{
+background-image:url("/frontend/examples/sustainableconst.jpg");
+background-size: cover;
+background-position: center;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+.example-text{
+  font-size:40px;color:white;padding-top:22%;
+}
+.example-text:hover{
+  color: #dccf39;
+}
+
+
+
+.footer {
+  text-align: center;
+  /* background-color: #86c6f4; */
+    background-color: #B4E197;
+  padding: 80px 0px;
+box-shadow: -1px -4px 20px 0px black;
+}
+.social-link {
+  text-decoration: none;
+  margin-right: 20px;
+  color: #fff;
+}
+.social-link:hover {
+  color: #886f6f;
+}
