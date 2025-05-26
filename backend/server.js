@@ -7,19 +7,32 @@ const cookieParser = require('cookie-parser');
 const path = require('path');
 const authMiddleware = require('./middleware/authMiddleware');
 
-
 // App Initialization
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+// Allowed Origins
+const allowedOrigins = [
+  'http://127.0.0.1:5500', // Local frontend
+  'http://localhost:5500', // Local fallback
+  'https://sustainability-matters-1.onrender.com' // Deployed frontend
+];
+
 // Middleware
 app.use(cors({
-  origin: 'http://127.0.0.1:5500',  // <-- Your frontend URL here (make sure to match exactly)
-  credentials: true                 // <-- Allow cookies and credentials
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true
 }));
-app.use(express.json()); // for parsing application/json
-app.use(express.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
-app.use(cookieParser()); // for parsing cookies
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(cookieParser());
 
 // MongoDB Connection
 const MONGO_URI = process.env.MONGO_URI;
@@ -35,7 +48,7 @@ mongoose.connect(MONGO_URI, {
 .then(() => console.log("✅ MongoDB Atlas connected"))
 .catch((err) => {
   console.error("❌ MongoDB connection error:", err);
-  process.exit(1); // Optional: exit if connection fails
+  process.exit(1);
 });
 
 // Routes
@@ -55,13 +68,12 @@ app.use(express.static(path.join(__dirname, 'public'), {
       filePath.endsWith('goal.html') ||
       filePath.endsWith('approach.html')
     ) {
-      // Block direct access to these files
       res.status(403).end('Forbidden');
     }
   }
 }));
 
-// Protect /goal and /approach routes with authMiddleware and serve corresponding files
+// Protected Routes
 app.get('/goal', authMiddleware, (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'goal.html'));
 });
@@ -72,6 +84,5 @@ app.get('/approach', authMiddleware, (req, res) => {
 
 // Start Server
 app.listen(PORT, () => {
-  console.log(`🚀 Server running on http://localhost:${PORT}`);
+  console.log(`🚀 Server running on port ${PORT}`);
 });
-
