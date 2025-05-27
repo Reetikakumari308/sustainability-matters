@@ -63,8 +63,8 @@ app.post('/', (req, res) => {
 const authRoutes = require('./routes/auth');
 app.use('/api/auth', authRoutes);
 
-// Serve static files (except goal.html and approach.html)
-app.use(express.static(path.join(__dirname, 'public'), {
+// Serve static files from 'frontend' folder (adjusted)
+app.use(express.static(path.join(__dirname, 'frontend'), {
   index: 'index.html',
   setHeaders: (res, filePath) => {
     if (
@@ -76,13 +76,13 @@ app.use(express.static(path.join(__dirname, 'public'), {
   }
 }));
 
-// Protected Routes
+// Protected Routes with authMiddleware, serve from 'frontend' folder
 app.get('/goal', authMiddleware, (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'goal.html'));
+  res.sendFile(path.join(__dirname, 'frontend', 'goal.html'));
 });
 
 app.get('/approach', authMiddleware, (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'approach.html'));
+  res.sendFile(path.join(__dirname, 'frontend', 'approach.html'));
 });
 
 // Start Server
