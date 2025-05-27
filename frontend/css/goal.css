@@ -1,13 +1,13 @@
-body {
-  margin: 0;
+body{
+  margin:0;
 }
 
-/* Navigation */
 .sec-nav-bar {
   width: 100%;
   height: 70px;
+  /* background-color: black; */
   position: static;
-  background-image: linear-gradient(#999090, black);
+  background-image: linear-gradient( #999090 , black);
 }
 
 li {
@@ -15,7 +15,7 @@ li {
   margin-right: 10px;
 }
 
-.nav-items {
+.nav-items{
   text-decoration: none;
   color: #fff;
 }
@@ -28,72 +28,68 @@ li {
 .nav-ul {
   text-align: right;
   padding-top: 2%;
-  margin-top: 0;
+  margin-top:0;
 }
-
-/* Hero Section */
-.image-cover {
+.image-cover{
   background-image: url(../goal-images/backimages.jpg);
   height: 600px;
-  width: 100%;
+  width:100%;
   background-size: cover;
   background-position: center;
   box-shadow: 0px 3px 8px 3px black;
-  animation: reetika 4s infinite alternate; /* smoother */
+  animation: reetika 4s infinite;
 }
-
 @keyframes reetika {
-  0% {
-    background-image: url(../goal-images/backimages.jpg);
-  }
-  100% {
-    background-image: url(../images/trees.jpg); /* Check this path exists */
-  }
+  0% { background-image: url(../goal-images/backimages.jpg);}
+  100% { background-image: url(../images/trees.jpg);}
 }
 
-.textbox {
+.mid-title{
+  margin:auto;
+  font-size: 60px;
+  color:white;
+}
+
+.textbox{
   margin: auto;
-  position: relative;
-  top: 40%;
-  width: 80%;
+  width:80%;
   background-color: black;
   opacity: 0.5;
   text-align: center;
 }
 
-.mid-title {
-  margin: auto;
-  font-size: 60px;
-  color: white;
+/* secondboxtitle */
+.secondboxtitle{
+
 }
 
-/* Titles */
-.secondboxtitle {
-  font-size: 40px;
-  text-align: center;
-  margin-top: 50px;
-  color: #444;
-}
-
-/* Third Section with Goals */
-.thirdbox {
+/* thirdbox */
+.thirdbox{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 100%;
-  margin-top: 50px;
-  gap: 20px;
+  width:100%;
+  margin-top:10%;
 }
 
-.goals {
-  width: 30%;
-  height: 350px;
+.goals{
+  width:30%;
+  height:350px;
+  /* background-color: red; */
+  margin-right: 2.5%;
   box-shadow: 5px 6px 20px 0px black;
-  position: relative;
-  overflow: hidden;
 }
 
-/* Flip animation */
+/* -==========--=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=- */
+
+.btn{
+  width: 200px;
+  height: 35px;
+  font-family: 'Kaushan Script';
+  font-size: 16px;
+  text-shadow: 2px 2px #e5e3c9;
+  border-radius: 10px;
+  background-image: linear-gradient(112deg, #30AADD, white);
+}
+
 .inner-flip {
   position: relative;
   width: 100%;
@@ -113,71 +109,148 @@ li {
   position: absolute;
   width: 100%;
   height: 100%;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
 .goal-back {
-  background-image: linear-gradient(#F8CB2E, #FFBDE6);
+  background-image: linear-gradient(#F8CB2E,#FFBDE6);
   color: white;
   transform: rotateY(180deg);
 }
 
-/* Reusable goal image styles */
-.goal1 { background-image: url(../goal-images/nopoverty.jpg); }
-.goal2 { background-image: url(../goal-images/hunger.jpg); }
-.goal3 { background-image: url(../goal-images/health.jpg); opacity: 0.9; }
-.goal4 { background-image: url(../goal-images/education.jpg); opacity: 0.8; }
-.goal5 { background-image: url(../goal-images/genderequality.jpg); opacity: 0.9; }
-.goal6 { background-image: url(../goal-images/cleanwater.jpg); }
-.goal7 { background-image: url(../goal-images/cleanenergy.jpg); }
-.goal8 { background-image: url(../goal-images/decentwork.jpg); }
-.goal9 { background-image: url(../goal-images/industry.jpg); }
-.goal10 { background-image: url(../goal-images/inequality.jpg); }
-.goal11 { background-image: url(../goal-images/sustainablecities.jpg); }
-.goal12 { background-image: url(../goal-images/consumption.jpg); }
-.goal13 { background-image: url(../goal-images/climate.png); }
-.goal14 { background-image: url(../goal-images/ocean.jpg); }
-.goal15 { background-image: url(../goal-images/grass.jpg); }
-.goal16 { background-image: url(../goal-images/peace.jpg); }
-.goal17 { background-image: url(../goal-images/partner.jpg); }
-.gif { background-image: url(../goal-images/gif.webp); }
-
-/* Apply common goal image styles */
-.goals {
+.goal1{
+  background-image: url(../goal-images/nopoverty.jpg);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
-
-/* Button styling */
-.btn {
-  width: 200px;
-  height: 35px;
-  font-family: 'Kaushan Script';
-  font-size: 16px;
-  text-shadow: 2px 2px #e5e3c9;
-  border-radius: 10px;
-  background-image: linear-gradient(112deg, #30AADD, white);
+.goal2{
+  background-image: url(../goal-images/hunger.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
+.goal3{
+  background-image: url(../goal-images/health.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  opacity:0.9;
+}
+.goal4{
+  background-image: url(../goal-images/education.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+.goal5{
+  background-image: url(../goal-images/genderequality.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+.goal6{
+  background-image: url(../goal-images/cleanwater.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.goal7{
+  background-image: url(../goal-images/cleanenergy.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.goal8{
+  background-image: url(../goal-images/decentwork.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.goal9{
+  background-image: url(../goal-images/industry.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.goal10{
+  background-image: url(../goal-images/inequality.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.goal11{
+  background-image: url(../goal-images/sustainablecities.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.goal12{
+  background-image: url(../goal-images/consumption.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.goal13{
+  background-image: url(../goal-images/climate.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.goal14{
+  background-image: url(../goal-images/ocean.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.goal15{
+  background-image: url(../goal-images/grass.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.goal16{
+  background-image: url(../goal-images/peace.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.goal17{
+  background-image: url(../goal-images/partner.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.gif{
+  background-image: url(../goal-images/gif.webp);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+/* .goals:hover{
+  box-shadow: 2px 2px black;
+  width:34%;
+  height:355px;
+  transition: width 2s , height 2s;
+} */
 
-/* Text inside hero */
-.text {
+.text{
   text-align: center;
-  top: 30%;
   font-size: 50px;
   color: #0010ff;
 }
-
-.text:hover {
+.text:hover{
   color: #FB2678;
 }
 
-/* Footer */
 .footer {
   text-align: center;
   background-color: #B4E197;
   padding: 80px 0px;
-  margin-top: 80px;
+  margin-top: 15%;
   box-shadow: -1px -4px 20px 0px black;
 }
 
@@ -186,28 +259,6 @@ li {
   margin-right: 20px;
   color: #fff;
 }
-
 .social-link:hover {
   color: #886f6f;
-}
-
-/* Optional: Responsive */
-@media screen and (max-width: 768px) {
-  .goals {
-    width: 80%;
-    margin-bottom: 20px;
-  }
-
-  .thirdbox {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .mid-title {
-    font-size: 40px;
-  }
-
-  .text {
-    font-size: 30px;
-  }
 }
