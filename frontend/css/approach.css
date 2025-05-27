@@ -32,7 +32,7 @@ li {
 }
 
 .image-cover {
-  background-image: url(./approach-images/Approach.gif);
+  background-image: url(../approach-images/Approach.gif);
   height: 600px;
   width: 100%;
   background-size: cover;
@@ -111,21 +111,21 @@ li {
 }
 
 .approach1 {
-  background-image: url('./approach-images/Save-energy.jpg');
+  background-image: url('../approach-images/Save-energy.jpg');
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 .approach2 {
-  background-image: url('./approach-images/walk\ \,\ bike\ or\ travel\ with\ public\ transport.jpg');
+  background-image: url('../approach-images/walk\ \,\ bike\ or\ travel\ with\ public\ transport.jpg');
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 .approach3 {
-  background-image: url('./approach-images/Eat\ more\ vegetables.jpg');
+  background-image: url('../approach-images/Eat\ more\ vegetables.jpg');
   background-position: center;
   background-size: auto 100%;
   background-repeat: no-repeat;
@@ -133,7 +133,7 @@ li {
 }
 
 .approach4 {
-  background-image: url('./approach-images/consider\ your\ travel.jpg');
+  background-image: url('../approach-images/consider\ your\ travel.jpg');
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -141,7 +141,7 @@ li {
 }
 
 .approach5 {
-  background-image: url('./approach-images/Throw\ away\ less\ food.jpg');
+  background-image: url('../approach-images/Throw\ away\ less\ food.jpg');
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -149,35 +149,35 @@ li {
 }
 
 .approach6 {
-  background-image: url('./approach-images/Reduce\,Reuse\,Repair\ and\ Recycle.jpg');
+  background-image: url('../approach-images/Reduce\,Reuse\,Repair\ and\ Recycle.jpg');
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 .approach7 {
-  background-image: url('./approach-images/Change\ your\ home\'s\ source\ energy.jpg');
+  background-image: url('../approach-images/Change\ your\ home\'s\ source\ energy.jpg');
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 .approach8 {
-  background-image: url('./approach-images/Switch\ to\ an\ electric\ vehicle.jpg');
+  background-image: url('../approach-images/Switch\ to\ an\ electric\ vehicle.jpg');
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 .approach9 {
-  background-image: url('./approach-images/Eco-Friendly-Product.jpg');
+  background-image: url('../approach-images/Eco-Friendly-Product.jpg');
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 .approach10 {
-  background-image: url('./approach-images/speakup.jpg');
+  background-image: url('../approach-images/speakup.jpg');
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
