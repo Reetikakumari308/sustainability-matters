@@ -33,7 +33,7 @@ li {
 
 /* Hero Section */
 .image-cover {
-  background-image: url(/frontend/goal-images/backimages.jpg);
+  background-image: url(../goal-images/backimages.jpg);
   height: 600px;
   width: 100%;
   background-size: cover;
@@ -45,10 +45,10 @@ li {
 
 @keyframes reetika {
   0% {
-    background-image: url(/frontend/goal-images/backimages.jpg);
+    background-image: url(../goal-images/backimages.jpg);
   }
   100% {
-    background-image: url(/frontend/images/trees.jpg);
+    background-image: url(../images/trees.jpg);
   }
 }
 
@@ -134,24 +134,24 @@ li {
 }
 
 /* Reusable goal image styles */
-.goal1 { background-image: url(/frontend/goal-images/nopoverty.jpg); }
-.goal2 { background-image: url(/frontend/goal-images/hunger.jpg); }
-.goal3 { background-image: url(/frontend/goal-images/health.jpg); opacity: 0.9; }
-.goal4 { background-image: url(/frontend/goal-images/education.jpg); opacity: 0.8; }
-.goal5 { background-image: url(/frontend/goal-images/genderequality.jpg); opacity: 0.9; }
-.goal6 { background-image: url(/frontend/goal-images/cleanwater.jpg); }
-.goal7 { background-image: url(/frontend/goal-images/cleanenergy.jpg); }
-.goal8 { background-image: url(/frontend/goal-images/decentwork.jpg); }
-.goal9 { background-image: url(/frontend/goal-images/industry.jpg); }
-.goal10 { background-image: url(/frontend/goal-images/inequality.jpg); }
-.goal11 { background-image: url(/frontend/goal-images/sustainablecities.jpg); }
-.goal12 { background-image: url(/frontend/goal-images/consumption.jpg); }
-.goal13 { background-image: url(/frontend/goal-images/climate.png); }
-.goal14 { background-image: url(/frontend/goal-images/ocean.jpg); }
-.goal15 { background-image: url(/frontend/goal-images/grass.jpg); }
-.goal16 { background-image: url(/frontend/goal-images/peace.jpg); }
-.goal17 { background-image: url(/frontend/goal-images/partner.jpg); }
-.gif { background-image: url(/frontend/goal-images/gif.webp); }
+.goal1 { background-image: url(../goal-images/nopoverty.jpg); }
+.goal2 { background-image: url(../goal-images/hunger.jpg); }
+.goal3 { background-image: url(../goal-images/health.jpg); opacity: 0.9; }
+.goal4 { background-image: url(../goal-images/education.jpg); opacity: 0.8; }
+.goal5 { background-image: url(../goal-images/genderequality.jpg); opacity: 0.9; }
+.goal6 { background-image: url(../goal-images/cleanwater.jpg); }
+.goal7 { background-image: url(../goal-images/cleanenergy.jpg); }
+.goal8 { background-image: url(../goal-images/decentwork.jpg); }
+.goal9 { background-image: url(../goal-images/industry.jpg); }
+.goal10 { background-image: url(../goal-images/inequality.jpg); }
+.goal11 { background-image: url(../goal-images/sustainablecities.jpg); }
+.goal12 { background-image: url(../goal-images/consumption.jpg); }
+.goal13 { background-image: url(../goal-images/climate.png); }
+.goal14 { background-image: url(../goal-images/ocean.jpg); }
+.goal15 { background-image: url(../goal-images/grass.jpg); }
+.goal16 { background-image: url(../goal-images/peace.jpg); }
+.goal17 { background-image: url(../goal-images/partner.jpg); }
+.gif { background-image: url(../goal-images/gif.webp); }
 
 /* Button styling */
 .btn {
