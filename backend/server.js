@@ -11,10 +11,22 @@ const authMiddleware = require('./middleware/authMiddleware');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+// Allowed origins for CORS
+const allowedOrigins = [
+  'https://sustainability-matters-1.onrender.com',
+  'http://localhost:3000', // for local dev (optional)
+];
+
 // Middleware
 app.use(cors({
-  origin: 'https://sustainability-matters-1.onrender.com',  // Frontend URL
-  credentials: true
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true,
 }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -40,6 +52,11 @@ mongoose.connect(MONGO_URI, {
 // Routes
 app.get('/', (req, res) => {
   res.send("🌿 Backend working for Sustainability_Matters");
+});
+
+// Added this to handle any unexpected POST requests to "/"
+app.post('/', (req, res) => {
+  res.json({ message: 'POST to root route received — this is a fallback response.' });
 });
 
 // Auth Routes
