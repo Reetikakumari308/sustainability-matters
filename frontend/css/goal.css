@@ -32,7 +32,7 @@ li {
   margin-top:0;
 }
 .image-cover{
-  background-image: url(/frontend/goal-images/backimages.jpg);
+  background-image: url(./goal-images/backimages.jpg);
   height: 600px;
   width:100%;
   background-size: cover;
@@ -41,8 +41,8 @@ li {
   animation: reetika 4s infinite;
 }
 @keyframes reetika {
-  0% { background-image: url(/frontend/goal-images/backimages.jpg);}
-  100% { background-image: url(/frontend/images/trees.jpg);}
+  0% { background-image: url(./goal-images/backimages.jpg);}
+  100% { background-image: url(./images/trees.jpg);}
 }
 
 .mid-title{
@@ -127,7 +127,7 @@ margin:auto;
 
 
 .goal1{
-  background-image: url(/frontend/goal-images/nopoverty.jpg);
+  background-image: url(./goal-images/nopoverty.jpg);
 
   background-position: center;
   background-size: 100% 100%;
@@ -135,107 +135,107 @@ margin:auto;
 
 }
 .goal2{
-  background-image: url(/frontend/goal-images/hunger.jpg);
+  background-image: url(./goal-images/hunger.jpg);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 
 }
 .goal3{
-  background-image: url(/frontend/goal-images/health.jpg);
+  background-image: url(./goal-images/health.jpg);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   opacity:0.9;
 }
 .goal4{
-  background-image: url(/frontend/goal-images/education.jpg);
+  background-image: url(./goal-images/education.jpg);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   opacity: 0.8;
 }
 .goal5{
-  background-image: url(/frontend/goal-images/genderequality.jpg);
+  background-image: url(./goal-images/genderequality.jpg);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   opacity: 0.9;
 }
 .goal6{
-  background-image: url(/frontend/goal-images/cleanwater.jpg);
+  background-image: url(./goal-images/cleanwater.jpg);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 .goal7{
-  background-image: url(/frontend/goal-images/cleanenergy.jpg);
+  background-image: url(./goal-images/cleanenergy.jpg);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 .goal8{
-  background-image: url(/frontend/goal-images/decentwork.jpg);
+  background-image: url(./goal-images/decentwork.jpg);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 .goal9{
-  background-image: url(/frontend/goal-images/industry.jpg);
+  background-image: url(./goal-images/industry.jpg);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 .goal10{
-  background-image: url(/frontend/goal-images/inequality.jpg);
+  background-image: url(./goal-images/inequality.jpg);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 .goal11{
-  background-image: url(/frontend/goal-images/sustainablecities.jpg);
+  background-image: url(./goal-images/sustainablecities.jpg);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 .goal12{
-  background-image: url(/frontend/goal-images/consumption.jpg);
+  background-image: url(./goal-images/consumption.jpg);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 .goal13{
-  background-image: url(/frontend/goal-images/climate.png);
+  background-image: url(./goal-images/climate.png);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 .goal14{
-  background-image: url(/frontend/goal-images/ocean.jpg);
+  background-image: url(./goal-images/ocean.jpg);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 .goal15{
-  background-image: url(/frontend/goal-images/grass.jpg);
+  background-image: url(./goal-images/grass.jpg);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 .goal16{
-  background-image: url(/frontend/goal-images/peace.jpg);
+  background-image: url(./goal-images/peace.jpg);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 .goal17{
-  background-image: url(/frontend/goal-images/partner.jpg);
+  background-image: url(./goal-images/partner.jpg);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 .gif{
-  background-image: url(/frontend/goal-images/gif.webp);
+  background-image: url(./goal-images/gif.webp);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
