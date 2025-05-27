@@ -1,13 +1,5 @@
-html, body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
+body{
+  margin:0;
 }
 
 .sec-nav-bar {
@@ -15,7 +7,8 @@ html, body {
   height: 70px;
   /* background-color: black; */
   position: static;
-  background-image: linear-gradient( #999090 , black);
+background-image: linear-gradient( #999090 , black);
+
 }
 
 li {
@@ -53,19 +46,20 @@ li {
 }
 
 .mid-title{
-  margin:auto;
+margin:auto;
   font-size: 60px;
   color:white;
 }
 
 .textbox{
   margin: auto;
+  position: relative;
+  top:40%;
   width:80%;
   background-color: black;
   opacity: 0.5;
   text-align: center;
 }
-
 /* secondboxtitle */
 .secondboxtitle{
 
@@ -76,14 +70,16 @@ li {
   display: flex;
   width:100%;
   margin-top:10%;
-}
 
+  }
 .goals{
   width:30%;
   height:350px;
   /* background-color: red; */
   margin-right: 2.5%;
+
   box-shadow: 5px 6px 20px 0px black;
+
 }
 
 /* -==========--=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=- */
@@ -122,22 +118,28 @@ li {
 }
 
 .goal-back {
+  /* background-color: #2980b9; */
   background-image: linear-gradient(#F8CB2E,#FFBDE6);
   color: white;
+  /* padding:2%; */
   transform: rotateY(180deg);
 }
 
+
 .goal1{
   background-image: url(../goal-images/nopoverty.jpg);
+
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+
 }
 .goal2{
   background-image: url(../goal-images/hunger.jpg);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+
 }
 .goal3{
   background-image: url(../goal-images/health.jpg);
@@ -246,22 +248,25 @@ li {
 } */
 
 .text{
-  text-align: center;
-  font-size: 50px;
-  color: #0010ff;
+  text-align:center; position:relative; top:30%; font-size:50px;
+  /* color:#fff; */
+  /* text-shadow: 2px 2px black; */
+  color:#0010ff;
 }
 .text:hover{
-  color: #FB2678;
+  /* color:#EB2678; */
+  color:#FB2678;
 }
 
 .footer {
   text-align: center;
+  /* background-color: #86c6f4; */
+  /* background-image: linear-gradient(#FFA1A1 ,#F9FFA4); */
   background-color: #B4E197;
   padding: 80px 0px;
   margin-top: 15%;
-  box-shadow: -1px -4px 20px 0px black;
+box-shadow: -1px -4px 20px 0px black;
 }
-
 .social-link {
   text-decoration: none;
   margin-right: 20px;
@@ -270,3 +275,4 @@ li {
 .social-link:hover {
   color: #886f6f;
 }
+
