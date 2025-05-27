@@ -194,21 +194,21 @@ li {
 
 /* ✅ Updated paths for .picX classes */
 .pic1 {
-  background-image: url(examples/windenergy.jpg);
+  background-image: url(/examples/windenergy.jpg);
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .pic2 {
-  background-image: url(../frontend/examples/solarenergy.jpg);
+  background-image: url(/examples/solarenergy.jpg);
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .pic3 {
-  background-image: url(../frontend/examples/croprotation.jpg);
+  background-image: url(/examples/croprotation.jpg);
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -222,21 +222,21 @@ li {
 }
 
 .pic4 {
-  background-image: url(../frontend/examples/sustainableforestry.jpg);
+  background-image: url(/examples/sustainableforestry.jpg);
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .pic5 {
-  background-image: url(../frontend/examples/greenspace.jpg);
+  background-image: url(/examples/greenspace.jpg);
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .pic6 {
-  background-image: url(../frontend/examples/sustainableconst.jpg);
+  background-image: url(/examples/sustainableconst.jpg);
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -268,4 +268,6 @@ li {
 .social-link:hover {
   color: #886f6f;
 }
+
+
 
