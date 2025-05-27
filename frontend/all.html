@@ -178,24 +178,24 @@
 </a>
 <p style="margin-top: 25px; font-style: italic;font-size: 20px;">💡 Created with love by <strong>Reetika Kumari</strong> to inspire sustainable living.</strong></p>
 </div>
-
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const isLoggedIn = localStorage.getItem('loggedIn') === 'true';
 
-    const goalLink = document.querySelector('a[href="/goal"]');
-    const approachLink = document.querySelector('a[href="/approach"]');
+document.addEventListener('DOMContentLoaded', () => {
+const isLoggedIn = localStorage.getItem('loggedIn') === 'true';
 
-    function checkLoginAndRedirect(event) {
-      if (!isLoggedIn) {
-        event.preventDefault(); // stop navigation
-        alert('Please login or register first!');
-      }
-    }
+const goalLink = document.querySelector('a[href="/frontend/goal.html"]');
+const approachLink = document.querySelector('a[href="/frontend/approach.html"]');
 
-    if (goalLink) goalLink.addEventListener('click', checkLoginAndRedirect);
-    if (approachLink) approachLink.addEventListener('click', checkLoginAndRedirect);
-  });
+function checkLoginAndRedirect(event) {
+if (!isLoggedIn) {
+event.preventDefault(); // stop navigation
+alert('Please login or register first!');
+}
+}
+
+if (goalLink) goalLink.addEventListener('click', checkLoginAndRedirect);
+if (approachLink) approachLink.addEventListener('click', checkLoginAndRedirect);
+});
 </script>
 
 </body>
